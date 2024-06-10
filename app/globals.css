@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --clr-base: #fefefe;
+    --clr-base-text: #353232;
+
+		--clr-purple-base: #8879DF;
+		--clr-red-base: rgb(235, 82, 90);
+		--clr-green-base: #70D465;
+
+		--clr-grey-extralight:#f0f0f0;
+		--clr-grey-light: #dfdede;
+		--clr-grey-base:rgb(218, 218, 218);
+		--clr-grey-dark:rgb(51, 50, 50);
+		--clr-grey-extradark:rgb(51, 50, 50);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-base: #1d1d1d;
+    --clr-base-text: #F9F8F8;
+
+    --clr-grey-extralight:#383838;
+    --clr-grey-light: rgb(63, 61, 61);
+    --clr-grey-base: rgba(204, 202, 202, 0.396);
+    --clr-grey-dark: rgb(207, 207, 207);
+    --clr-grey-extradark:black;
+  }
+}
+
+/*------- EXTRA CLASS STYLING BEGINS HERE -------*/
+.border-base {
+	border: 1px solid var(--clr-grey-light);
+	border-radius: 12px;
+}
+
+
+/*------- EXTRA CLASS STYLING ENDS HERE -------*/
+
+body {
+  background-color: var(--clr-base);
+  color: var(--clr-base-text);
+  overflow-x:hidden;
+}
+
+input {
+  border-radius: 8px;
+  padding: .5rem;
+  border: 2px solid var(--clr-grey-light);
+  background-color: var(--clr-base);
+  color: var(--clr-text);
+}
+
+input::placeholder {
+  color: #a9a9a9; /* Change this color to your desired placeholder color */
+}
+
+input[type="text"] {
+  color:var(--clr-grey-dark);
+  background-color: var(--clr-base);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--clr-purple-base);
+}
+
+textarea {
+  border-radius: 8px;
+  padding: .5rem;
+  border: 2px solid var(--clr-grey-light);
+  background-color: #fbfbfb;
+  color: var(--clr-text);
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--clr-grey-base);
+}
+
+select {
+  background-color: var(--clr-base);
+  outline: none;
+  border: 2px solid var(--clr-grey-light);
+  border-radius: 8px;
+  padding: .5rem;
+  font-size: 14px;
+}
+
+svg {
+  fill: var(--clr-base-text);
+}
+
+h1 {
+  line-height: 1.2em;;
+}
+
+a {
+  cursor:pointer;
+}
+
+hr {
+  background-color:var(--clr-grey-dark);
+}
+
+
+@media screen and (min-width: 1024px) {
+  p {font-size: 18px}
+  button {font-size: 18px;}
+}
+
+@media screen and (min-width: 768px) {
+  p {font-size: 16px}
+  button {font-size: 16px;}
+}
+
+@media screen and (max-width: 786px) {
+  p {font-size: 14px}
+  button {font-size: 14px;}
+}
+
+
+@media screen and (max-width: 640px) {
+  p {font-size: 14px}  
+  button {font-size: 16px;}
+}
+
+
