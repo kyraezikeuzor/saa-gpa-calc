@@ -205,10 +205,15 @@ export default function Calculator() {
                 </ul>
                 <br/>
                 <h2 className='font-semibold text-lg'>How to use:</h2>
-                <ul className='ml-5 '>
+                <ul className='ml-5'>
                     <li className='list-disc'>Input <b>all</b> information for each course below.</li>
                     <li className='list-disc'>Make sure to select which semesters you took a course.</li>
                     <li className='list-disc'>For a semester in which you didn&apos;t take a course, keep the Fall/Spring Grade value <b>empty</b>.</li>
+                    <li className='list-disc'>
+                        How SAA calculates summer classes in out GPAs is unclear, so add any summer classes to <b>one</b> semester <br/> of the grade you took them.
+                        For example if you took Comm Apps the summer before 9th grade, <br/> add it to your <b>Fall Semester</b> courses for 9th grade. 
+                        This is not 100% accurate, but it&apos;s close enough.
+                    </li>
                 </ul>
             </div>
 
