@@ -192,22 +192,23 @@ export default function Calculator() {
                 <h1 className='font-semibold text-3xl lg:text-4xl'> 
                     <img src='/tiger-logo.png' className='inline w-10 h-10'/> Tiger GPA Calculator
                 </h1>
-                <p className='opacity-75'>Made with ❤️ by <Link target='_blank' className='hover:opacity-75 underline underline-offset-4' href='https://kyraezikeuzor.vercel.app/'>Kyra Ezikeuzor</Link>, St. Agnes Academy '25.</p>
+                <p className='opacity-75'>Made with ❤️ by <Link target='_blank' className='hover:opacity-75 underline underline-offset-4' href='https://kyraezikeuzor.vercel.app/'>Kyra Ezikeuzor</Link>, St. Agnes Academy &apos;25.</p>
             </header>
 
             <div className=''>
                 <h2 className='font-semibold text-lg'>What to know:</h2>
                 <ul className='ml-5 '>
                     <li className='list-disc '>St. Agnes Academy calculates two GPAs: GPA 1 and GPA 2.</li>
-                    <li className='list-disc'>GPA 2 is based on your numerical grades and weighted classes.</li>
                     <li className='list-disc'>GPA 1 is based on your letter grades and weighted classes.</li>
+                    <li className='list-disc'>GPA 2 is based on your numerical grades and weighted classes.</li>
+                    <li className='list-disc'>The method for calculating both GPAs is in the SAA school planner.</li>
                 </ul>
                 <br/>
                 <h2 className='font-semibold text-lg'>How to use:</h2>
                 <ul className='ml-5 '>
-                    <li className='list-disc '>Input <b>all</b> information for each course below.</li>
-                    <li className='list-disc '>Make sure to select which semesters you took a course.</li>
-                    <li className='list-disc '>For a semester in which you didn't take a course, keep the Grade value <b>empty</b>.</li>
+                    <li className='list-disc'>Input <b>all</b> information for each course below.</li>
+                    <li className='list-disc'>Make sure to select which semesters you took a course.</li>
+                    <li className='list-disc'>For a semester in which you didn&apos;t take a course, keep the Fall/Spring Grade value <b>empty</b>.</li>
                 </ul>
             </div>
 
